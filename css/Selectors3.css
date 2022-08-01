@@ -1,0 +1,20 @@
+a:hover{
+    text-decoration:none;
+  }
+  a:link{
+    color:orange;
+  }
+  a:visited {
+    color:green;
+  }
+  div::first-line{
+    color:red;
+  }
+ div p:first-child{
+    font-size:150%;
+  }
+  tr:nth-child(odd){
+    background-color:#333;
+    color:white;
+  }
+  
