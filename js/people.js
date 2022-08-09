@@ -11,8 +11,13 @@ if(people[i]==='Phil'||people[i]==='Lola'){
   else{refused.textContent += people[i]+', ';}
 }
 else{
-  if(i=== people.length-2){admitted.textContent +=(people[i]+'.');}
+  if(i=== people.length-1){admitted.textContent +=(people[i]+'.');}
   else{admitted.textContent +=(people[i]+', ') ;}
 
 }
 }
+/*关于把最后结尾的逗号换成句号也可采用下面的方法
+通过截取字符串长度-2的新字符串，加上句号，最后在赋值给原来的字符串
+refused.textContent = refused.textContent.slice(0,refused.textContent.length-2) + '.';
+admitted.textContent = admitted.textContent.slice(0,admitted.textContent.length-2) + '.';
+*/
